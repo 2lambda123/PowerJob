@@ -53,6 +53,7 @@
         <powerjob-remote-impl-http.version>4.3.2</powerjob-remote-impl-http.version>
         <powerjob-remote-impl-akka.version>4.3.2</powerjob-remote-impl-akka.version>
         <springdoc-openapi-ui.version>1.6.14</springdoc-openapi-ui.version>
+        <versions.java-security-toolkit>1.1.2</versions.java-security-toolkit>
     </properties>
 
     <dependencyManagement>
@@ -96,6 +97,11 @@
                 <groupId>tech.powerjob</groupId>
                 <artifactId>powerjob-server-starter</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.pixee</groupId>
+                <artifactId>java-security-toolkit</artifactId>
+                <version>${versions.java-security-toolkit}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
